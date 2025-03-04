@@ -2,15 +2,17 @@ import React from 'react';
 
 import Intro from './about/intro';
 import AboutContent from './about/aboutContent';
-const About = () => {
+
+function About() {
   return (
-    <div className="w-full max-w-[800px] p-[20px] mx-auto h-screen mt-[80px] pt-[100px]">
-      <div className="flex AboutContent justify-center items-center space-y-8">
+    <section id="about" className="w-full h-screen bg-gray-100/50">
+      <div className="flex flex-col items-center ">
         <Intro />
+
         <AboutContent />
       </div>
-    </div>
+    </section>
   );
-};
+}
 
 export default About;
