@@ -9,21 +9,17 @@ export function Splash() {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    // 페이지 로드 시 스크롤을 최상단으로 이동
     window.scrollTo(0, 0);
 
-    // 스플래시 화면이 표시될 때 body의 스크롤 막기
     document.body.style.overflow = 'hidden';
 
     const timer = setTimeout(() => {
       setIsVisible(false);
-      // 스플래시 화면이 사라질 때 body의 스크롤 다시 활성화
       document.body.style.overflow = 'unset';
     }, 5000);
 
     return () => {
       clearTimeout(timer);
-      // 컴포넌트가 언마운트될 때도 스크롤 다시 활성화
       document.body.style.overflow = 'unset';
     };
   }, []);
@@ -32,7 +28,6 @@ export function Splash() {
 
   return (
     <div className="relative h-screen w-full overflow-hidden">
-      {/* text */}
       <motion.div
         initial={{ opacity: 1 }}
         animate={{ opacity: 0 }}
@@ -77,7 +72,6 @@ export function Splash() {
           </div>
         </div>
         <div className="absolute top-0 left-0 right-0 h-full w-full">
-          {/* shoes */}
           <motion.div
             initial={{ scale: 4, opacity: 0, rotate: 20 }}
             animate={{ scale: 1, opacity: 1, rotate: 0 }}
@@ -91,7 +85,7 @@ export function Splash() {
           >
             <Image
               src={profile}
-              alt=""
+              alt="profile"
               className="size-[200px] rounded-full shadow-2xl"
             />
           </motion.div>
