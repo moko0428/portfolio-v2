@@ -40,8 +40,8 @@ export const AnimatedHeader = ({ children }: AnimatedHeaderProps) => {
       }}
       animate={hidden ? 'hidden' : 'visible'}
       transition={{ duration: 0.35, ease: 'easeInOut' }}
-      className={`fixed h-[80px] w-full max-w-[1400px] p-[20px] flex flex-row  items-center Logo transition-colors duration-300 
-        ${isScrolled ? '' : 'bg-transparent'}`}
+      className={`fixed h-[80px] w-full max-w-[1400px] p-[20px] flex flex-row  items-center Logo transition-colors duration-300 backdrop-blur bg-white/50 z-50
+        ${isScrolled ? '' : 'bg-white/50'}`}
     >
       {children}
     </motion.header>
