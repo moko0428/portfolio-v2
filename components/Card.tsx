@@ -40,7 +40,7 @@ const Card = () => {
         </div>
         <div className="py-[20px]">
           <h2 className="font-bold text-[18px]">{project.title}</h2>
-          <span className="text-gray-300">{project.made}</span>
+          <span className="text-gray-300">{project.member}</span>
         </div>
       </div>
 

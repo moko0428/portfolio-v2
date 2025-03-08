@@ -3,7 +3,19 @@ import { AnimatePresence, LayoutGroup, motion } from 'framer-motion';
 import { Skills_Data } from '@/data/skills.data';
 import Image from 'next/image';
 
-const skill = ({ setHoveredId, hoveredId, selectedId, setSelectedId }: any) => {
+interface SkillProps {
+  setHoveredId: (id: number | null) => void;
+  hoveredId: number | null;
+  selectedId: number | null;
+  setSelectedId: (id: number | null) => void;
+}
+
+const Skill = ({
+  setHoveredId,
+  hoveredId,
+  selectedId,
+  setSelectedId,
+}: SkillProps) => {
   return (
     <section>
       <header className="flex flex-col items-center justify-center gap-2 mb-2">
@@ -12,7 +24,7 @@ const skill = ({ setHoveredId, hoveredId, selectedId, setSelectedId }: any) => {
       </header>
       <LayoutGroup>
         <motion.div className="w-full max-w-xl grid grid-cols-3 gap-4 p-4">
-          {Skills_Data.map((skill, _) => (
+          {Skills_Data.map((skill) => (
             <motion.div
               key={skill.id}
               layoutId={`skill-${skill.id}`}
@@ -93,4 +105,4 @@ const skill = ({ setHoveredId, hoveredId, selectedId, setSelectedId }: any) => {
   );
 };
 
-export default skill;
+export default Skill;
