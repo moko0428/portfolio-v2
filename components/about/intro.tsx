@@ -2,7 +2,7 @@ import React from 'react';
 
 const Intro = () => {
   return (
-    <div className="flex flex-col justify-center items-center *:text-[25px] gap-4 mt-32">
+    <div className="flex flex-col justify-center items-center *:text-2xl gap-4 mt-32">
       <div>
         안녕하세요.{' '}
         <span className="font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
@@ -10,15 +10,27 @@ const Intro = () => {
         </span>
         입니다.
       </div>
-      <div>
-        저는{' '}
-        <span className="font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
-          성장하는 것
-        </span>
-        을 즐기는 개발자입니다.
+      <div className="flex flex-col gap-2 justify-center items-center">
+        <div>
+          <span className="font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+            새로운 기술
+          </span>
+          과
+          <span className="font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+            {' '}
+            트렌드
+          </span>
+          를
+        </div>
+        <div>
+          <span className="font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+            다양한 아이디어
+          </span>
+          를
+        </div>
       </div>
       <span className="font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
-        웹과 앱개발을 좋아합니다.
+        일상 생활에 녹여내는 것을 좋아합니다.
       </span>
     </div>
   );

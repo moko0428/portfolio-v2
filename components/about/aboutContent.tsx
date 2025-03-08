@@ -8,7 +8,6 @@ import { IoMdMail } from 'react-icons/io';
 import Link from 'next/link';
 import { useCopyToClipboard } from 'usehooks-ts';
 import { EMAIL, PHONE_NUMBER } from '@/constants/text';
-import toast from 'react-hot-toast';
 import { HiDownload } from 'react-icons/hi';
 
 const contect = [
