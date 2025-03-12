@@ -1,6 +1,3 @@
-import nomad from '@/public/assets/study_nomadcoder_표지.png';
-import question from '@/public/assets/study_면접질문_표지.png';
-import nextjs from '@/public/assets/skills/nextdotjs.svg';
 import htmlOn from '@/public/assets/skills/htmlOn.svg';
 import htmlOff from '@/public/assets/skills/htmlOff.svg';
 import cssOn from '@/public/assets/skills/cssOn.svg';
@@ -19,35 +16,8 @@ import twOn from '@/public/assets/skills/tailwindcssOn.svg';
 import twOff from '@/public/assets/skills/tailwindcssOff.svg';
 import supaOn from '@/public/assets/skills/supabaseOn.svg';
 import supaOff from '@/public/assets/skills/supabaseOff.svg';
-const ICON_BASE_URL = 'https://simpleicons.org/icons/';
+
 export const Skills_Data = [
-  {
-    id: 1,
-    cover: htmlOff,
-    hoverCover: htmlOn,
-    title: 'HTML',
-    description: [
-      '기본적인 HTML 구조와 문서 타입 선언을 이해하고 있어요.',
-      '시멘틱 태그를 활용하여 웹 접근성을 고려한 마크업을 할 수 있어요.',
-      'meta 태그를 활용하여 SEO 최적화를 할 수 있어요.',
-    ],
-    hot: false,
-  },
-  {
-    id: 2,
-    cover: cssOff,
-    hoverCover: cssOn,
-    title: 'CSS',
-    description: [
-      '선택자(Selector)를 활용하여 원하는 요소를 스타일링할 수 있어요',
-      'Box Model을 이해하고 레이아웃을 구성할 수 있어요',
-      'Flexbox와 Grid를 활용하여 반응형 레이아웃을 만들 수 있어요',
-      'Position, Display 속성을 활용하여 요소를 배치할 수 있어요',
-      'Media Query를 활용한 반응형 디자인을 구현할 수 있어요',
-      'CSS 변수와 애니메이션을 활용할 수 있어요',
-    ],
-    hot: false,
-  },
   {
     id: 3,
     cover: jsOff,
