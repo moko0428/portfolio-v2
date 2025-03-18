@@ -2,10 +2,9 @@
 
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import profile from '@/public/assets/이준영.jpg';
-import Image from 'next/image';
+import Profile from '../sections/intro/Profile';
 
-export function Splash() {
+const Splash = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
@@ -83,14 +82,12 @@ export function Splash() {
             }}
             className="flex h-full w-full items-center justify-center"
           >
-            <Image
-              src={profile}
-              alt="profile"
-              className="size-[200px] rounded-full shadow-2xl"
-            />
+            <Profile />
           </motion.div>
         </div>
       </motion.div>
     </div>
   );
-}
+};
+
+export default Splash;

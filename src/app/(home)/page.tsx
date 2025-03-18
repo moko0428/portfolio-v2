@@ -1,22 +1,19 @@
 'use client';
-import About from '@/components/About';
-import Footer from '@/components/Footer';
-import { Header } from '@/components/header/Header';
-import Project from '@/components/Project';
-import Scroll from '@/components/Scroll';
-import Skills from '@/components/skills';
-import Study from '@/components/Study';
+
+import Scroll from '@/src/components/Scroll';
+import About from '@/src/sections/intro/About';
+import Project from '@/src/sections/project/Project';
+import Skills from '@/src/sections/skill/skills';
+import Study from '@/src/sections/study/Study';
 export default function Home() {
   return (
     <div className="flex flex-col ">
       <Scroll />
       <div className="flex flex-col items-center">
-        <Header />
         <About />
         <Skills />
         <Project />
         <Study />
-        <Footer />
       </div>
     </div>
   );

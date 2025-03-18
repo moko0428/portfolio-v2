@@ -14,6 +14,7 @@ export default function Scroll() {
         backgroundColor: 'rgba(0, 0, 0, 0.3)',
         scaleX: scrollYProgress,
         transformOrigin: '0% 0%',
+        zIndex: 1000,
       }}
     />
   );
