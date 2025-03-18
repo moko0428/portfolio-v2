@@ -1,22 +1,27 @@
 import { StaticImageData } from 'next/image';
 
-export interface ProjectsProps {
+export type ProjectProps = {
   id: number;
+  screen: StaticImageData;
   title: string;
-  coverMain: StaticImageData;
-  descriptionShort: string;
-  teamName: string;
-  progressPeriod: string;
+  description: string;
   member: string;
-  link: string;
   tech: string[];
-  features: string[];
-  description: {
-    title: string;
-    list: {
-      title: string;
-      cover: string;
-      desc: string[];
-    }[];
-  }[];
-}
+};
+
+// Pro
+export type Project = {
+  name: string;
+  image: string;
+  github: string;
+  figma?: string;
+  url?: string;
+  description: string;
+  skills: string[];
+  path: string;
+  isTeam: boolean;
+};
+
+export type ProjectData = Project & {
+  content: string;
+};
