@@ -1,5 +1,3 @@
-# 일단나와
-
 ## 프로젝트 개요
 
 <img src="https://portfolio-moko-s3-bucket.s3.us-east-1.amazonaws.com/%E1%84%8B%E1%85%B5%E1%86%BA%E1%84%8C%E1%85%B5%E1%86%B8_%E1%84%85%E1%85%A9%E1%84%80%E1%85%A9.png" alt="itzip_cover" />

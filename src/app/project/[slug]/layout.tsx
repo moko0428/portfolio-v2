@@ -10,5 +10,5 @@ export default function ProjectsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return <div className="w-full pt-20">{children}</div>;
 }
