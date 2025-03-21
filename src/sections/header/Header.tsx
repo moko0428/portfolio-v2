@@ -3,6 +3,7 @@
 import React from 'react';
 import { AnimatedHeader } from './AnimatedHeader';
 import Scroll from '@/src/components/Scroll';
+import Link from 'next/link';
 
 const menuItems = [
   { id: 'about', label: 'ABOUT' },
@@ -27,7 +28,9 @@ const Header = () => {
   return (
     <AnimatedHeader>
       <Scroll />
-      <div className="text-[30px]">MOKO</div>
+      <Link href="/">
+        <div className="text-[30px]">MOKO</div>
+      </Link>
       <div className="Nav flex flex-row gap-4 *:text-[25px]">
         {menuItems.map((item) => (
           <button
