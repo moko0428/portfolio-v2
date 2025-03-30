@@ -33,6 +33,7 @@ export const AnimatedHeader = ({ children }: AnimatedHeaderProps) => {
   });
 
   return (
+    // fixed h-[80px] max-w-[1400px] p-[20px] flex flex-row justify-between  items-center Logo transition-colors duration-300 backdrop-blur bg-red-500 mx-auto z-50
     <motion.header
       variants={{
         visible: { y: 0 },
@@ -40,7 +41,7 @@ export const AnimatedHeader = ({ children }: AnimatedHeaderProps) => {
       }}
       animate={hidden ? 'hidden' : 'visible'}
       transition={{ duration: 0.35, ease: 'easeInOut' }}
-      className={`fixed h-[80px] w-full max-w-[1400px] p-[20px] flex flex-row  items-center Logo transition-colors duration-300 backdrop-blur bg-white/50 z-50
+      className={`fixed flex w-full bg-white/50 h-[80px] items-center justify-between transition-colors duration-300 backdrop-blur z-50 Logo
         ${isScrolled ? '' : 'bg-white/50'}`}
     >
       {children}
